@@ -1,0 +1,48 @@
+.contact_form {
+    background-color: #3a9dee;
+    border-radius: 4px;
+    box-shadow: 0.5rem 0.5rem 2rem #a7a4a4, -0.5rem -0.5rem 2rem #acabab;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    width: 320px;
+}
+
+.form_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: rgb(1, 1, 1);
+}
+
+.contact_lable {
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.input_name {
+    margin-left: 28px;
+}
+
+.input_num {
+    margin-left: 11px;
+}
+
+.contact_btn_add {
+    border-color: transparent;
+    border-radius: 20px;
+    background-color: #0060af;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact_btn_add:hover {
+    background-color: #0890ff
+}

@@ -1,0 +1,13 @@
+.filter_box {
+    display: flex;
+    justify-content: center;
+}
+
+.filter_tittle {
+    font-weight: bolder;
+}
+
+.filter_input {
+    display: flex;
+    margin-top: 10px;
+}
