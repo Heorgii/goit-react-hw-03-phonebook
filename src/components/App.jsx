@@ -41,6 +41,21 @@ class App extends Component {
       return;
     }
 
+    // ?????
+    // const isAdded = this.state.contacts.find(el => {
+    //   if (el.name.toUpperCase() === isNameAdded) {
+
+    //     // if (isAdded) {
+    //     //   alert(`${name} is already in contacts`);
+    //     //   return;
+    //     // }
+    //     // alert(`${name} is already in contacts`);
+    //     // isAdded = true;
+    //     // return;
+    //   }
+    // });
+
+
     const contact = {
       id: nanoid(),
       name: name,
