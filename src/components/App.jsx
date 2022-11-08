@@ -28,33 +28,15 @@ class App extends Component {
 
   addContact = ({ name, number }) => {
     const isNameAdded = name.toUpperCase();
-    let isAdded = false;
 
-    this.state.contacts.forEach(el => {
-      if (el.name.toUpperCase() === isNameAdded) {
-        alert(`${name} is already in contacts`);
-        isAdded = true;
-      }
+    const isAdded = this.state.contacts.find(el => {
+      return (el.name.toUpperCase() === isNameAdded);
     });
 
     if (isAdded) {
+      alert(`${name} is already in contacts`);
       return;
     }
-
-    // ?????
-    // const isAdded = this.state.contacts.find(el => {
-    //   if (el.name.toUpperCase() === isNameAdded) {
-
-    //     // if (isAdded) {
-    //     //   alert(`${name} is already in contacts`);
-    //     //   return;
-    //     // }
-    //     // alert(`${name} is already in contacts`);
-    //     // isAdded = true;
-    //     // return;
-    //   }
-    // });
-
 
     const contact = {
       id: nanoid(),
@@ -65,7 +47,6 @@ class App extends Component {
     this.setState(prevState => ({
       contacts: [...prevState.contacts, contact],
     }));
-
   }
 
   deleteContact = e => {
